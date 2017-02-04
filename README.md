@@ -4,7 +4,7 @@ This site is all about me; what I do, what I am learning, what I would like to l
 
 ## [About me](http://www.yannickmister.me/about_me)
 
-Some background info about me, to get familiar.
+Some background info about me, to get us acquainted.
 
 ## Acknowledgments
 
