@@ -6,6 +6,10 @@ This site is all about me; what I do, what I am learning, what I would like to l
 
 Some background info about me, to get us acquainted.
 
+## [Sally's Resume](http://www.yannickmister.me/Sallys_Resume)
+
+A fictional resume of Sally Jefferson, as an assignment for the course I'm following.
+
 ## Acknowledgments
 
 * I'm learning all the basics on front-end site design from a course on Thinkful.com. This site is created during and based on that course.
