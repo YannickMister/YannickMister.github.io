@@ -8,5 +8,5 @@ Some background info about me, to get us acquainted.
 
 ## Acknowledgments
 
-* I'm learning all the basics on front-end site design from Thinkful.com. All I show here comes directly from that course.
+* I'm learning all the basics on front-end site design from a course on Thinkful.com. This site is created during and based on that course.
 
