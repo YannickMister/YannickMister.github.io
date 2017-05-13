@@ -1,77 +1,89 @@
-/*** css for the text, inside the float-dgrid ***/
 body {
-  background-image: url("images/GoatBackground.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  background-position: right bottom; 
-  background-color: #B3D6E9;
+	background-color: #e4bd32;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 main {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+	text-align: center;
+	font-family: 'Lora', serif;
+	padding-top: 5px;
+  	font-size: 14px;
+	position: absolute;
+	top: -5px;
+	z-index: 50;
+	width: 100%;
 }
 
-/*** Heading ***/
-  .heading {
-    display: block;
-    position: relative;
-    left: 10%;
+.row {
+	border-bottom: 2px solid black;
+	width: 100%;
+}
+
+main > .first {
+	text-align: center;
+	min-height: 200px;
+	background-color: #8ABFD0;
+	color: white;
+}
+
+main img {
+	position: relative;
+	width: 90%;
+	height: 100%;
+	max-width: 750px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+main > .textrow {
+	text-align: justify;
+}
+
+.groot {
+	padding-right: 50px;
+	font-family: 'Slabo 27px', serif;
+	font-style: bold;
+	font-size: 20px;
+	font-size: 10vw;
+	color: white;
+	text-shadow: -2px 2px #d39d17;
+}
+
+.second {
+	top: -30px;
+	position: relative;
+	font-size: 16px;
+}
+
+
+/* Non-mobile, grid */
+  @media only screen and (min-width: 600px) {
+	main > .first {
+		text-align: right;
+		min-height: 200px;
+		background-image: url("images/GoatBackground.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: left bottom;
+		color: white;
+	}
+
+	main img {
+		position: relative;
+		width: 50%;
+		height: 100%;
+		max-width: 750px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		right: 3%;
+	}
+
+	.groot {
+		font-size: 60px;
+	}
+	.second {
+		font-size: 20px;
+	}
   }
-
-  .heading h1 {
-    font-family: "Nunito Sans", sans-serif;
-    font-style: italic;
-    font-size: 65px;
-    max-width: 75%;  
-    color: white;
-    font-weight: lighter;
-    text-shadow: -1px 2px 1px #999999;
-  }
-
-  .subheading {
-    display: block;
-    position: relative;
-    top: -55px;
-    left: 15%;  
-    width: 80%;
-    padding-left: 9px;
-    border-left: 2px solid #999999;
-  }
-
-  .subheading h3 {
-    font-family: "Nunito Sans", sans-serif;
-    size: 10px;
-    font-weight: 200;
-    color:white;
-    text-align: justify;
-    text-shadow: -1px 1px 1px darkgrey;
-  }
-
-  /* Non-mobile, grid */
-  @media only screen and (min-width: 640px) {
-    .heading {
-      left: 20%;
-    }
-    .subheading {
-      max-width: 750px;
-      padding-right: 10%;
-      left: 25%;
-    }
-    .heading h1 {
-      font-family: "Nunito Sans", sans-serif;
-      font-style: italic;
-      font-size: 80px;  
-      font-weight: lighter;
-    }
-  }
-/*** End heading ***/
-
-
-
-
-
-
-

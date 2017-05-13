@@ -16,35 +16,26 @@
  **/
 
 .row {
-  max-width: 1000px;
+  display: absolute;
   height: auto;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
 }
-
-/* Clearfix */
-.row::before,
-.row::after {
-  display: table;
-  content: '';
-}
-
-.row::after {
-  clear: both;
+.textrow {
+  display: absolute;
+  max-width: 1000px;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .col-1, .col-3, .col-4, .col-6, .col-9, .col-12 {
   float: left;
+}
 
-  /* Gutters:
-   * Each column is padded by half-a-gutter on each side,
-   *
-   * Half a gutter is 10px, 10/960 (context) = 1.041666%
-   *
-   */
-  padding-left: 1.04166666%;
-  padding-right: 1.04166666%;
+.col-66 {
+  display: none;
 }
 
 /* Mobile defaults */
@@ -81,5 +72,10 @@
   /* 12 columns, 12/12 */
   .col-12 {
     width: 100%;
+  }
+
+  /* hidden column, for padding */
+  .col-66 {
+  display: inline;
   }
 }

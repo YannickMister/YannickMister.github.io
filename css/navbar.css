@@ -1,101 +1,130 @@
 /*** Everything for the nav-bar ****/
 
-  header {
-    font-family: 'Amico', sans-serif;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    padding-right: 10px;
-    background-color: #f9f9f9;
-    border-bottom: 1px solid darkgrey;
-    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2); 
+/* 
+yellow: #e4bd32
+gold: #d39d17
+lightblue: #70A8B4 
+blue: #43879e
+red: #d52b0a
+geit: #8ABFD0
+*/
+
+  /*** Menu Button ***/
+  .menubtn {
+    position: absolute;
+    background-image: url("images/menu_btn_white.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 36px;
+    width: 40px;
+    left: 12px;
+    top: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
     z-index: 500;
   }
 
-  header .quote {
-    display: none;
-  }
-
-  /* Dropdown Button */
-  .dropbtn {
-    position: absolute;
-    left: 30px;
-    top: 15px;
-    /* background-color: white; */
-    background-image: url("images/MenuCompass.png");
-    background-color: rgba(249, 249, 249,0.1);
-    background-size: 95%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 35px;
-    border: 4px solid #595959;
-    /*border:none;*/
-    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2); 
-    color: #585975;
-    padding: 10px;
-    font-size: 18px;
-    height: 70px;
-    width: 70px;
-    cursor: pointer;
-    z-index: 450;
-  }
-
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    /*background-color: #3e8e41;*/
-    /*border: 2px solid grey;*/
-    background-image: url("images/MenuCompass.png");
-    background-color: rgba(249, 249, 249,0.8);
-    background-size: 100%;
-    top: 15px;
-  }
-
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+  /*** Menu Content (Hidden by Default) ***/
+  .menu-content {
     display: none;
     position: relative;
-    top: 50px;
-    left: 85px;
-    background-color: #f9f9f9;
-    border-radius: 2px;
-    max-width: 180px;
+    top: 48px;
+    left: 10px;
+    max-width: 200px;
+    border: 2px solid black;
+    border-top: none;
     box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
-    z-index: 400;
+    z-index: 500;
   }
-  /* Links inside the dropdown */
-  .dropdown-content a {
+
+  .dropbtn {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    text-align: left;
+    border: none;
+    border-top: 2px solid black;
+    background-color: #8ABFD0;
+    height: 44px;
+    width: 100%;
     color: black;
     padding: 12px 5px 12px 18px;
-    text-decoration: none;
     display: block;
   }
 
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #f1f1f1;
-    border-radius: 2px}
+  /* Change color of menu links on hover */
+  .dropbtn:hover {
+    background-color: #e4bd32;
+    font-style: italic;
+  }
 
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
-  
+  /* Show the menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display:block;
+  }
+
+  /* Hoverable dropdown menu */
+  .dropcontent {
+    display: none;
+    position: absolute;
+    left: 44px;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 600;
+  }
+
+  .dropdiv:hover .dropcontent {
+    display: block;
+  }
+
+  .dropitem {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    text-align: left;
+    border: none;
+    /*background-color: #e4bd32;*/
+    background-color: #8ABFD0;
+    color: black;
+    padding: 12px 5px 12px 18px;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: -10px 0px 4px 0px rgba(0,0,0,0.2);
+  }
+  .dropcontent > .first {
+    border: 2px solid black;
+    height: 46px;
+  }
+  .dropcontent > .rest {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 44px;
+  }
+
+
+  /* Change color of menu links on hover */
+  .dropitem:hover{
+    background-color: #e4bd32;
+    font-style: italic;
+  }
+
   /* End dropdown box */
+
   /* Non-mobile, grid */
-  @media only screen and (min-width: 550px) {
-    header .quote {
-      display: inline;
-      font-family: 'Lora', serif;
-      float: right;
-      top: 0;
-      right: 10px;
-      font-size: 12px;
-      height: 40px;
-      width: 330px;
-      color: grey;
+  @media only screen and (min-width: 600px) {
+    header {
+      border-bottom: 3.5px solid black;
     }
-    header .q1 {
-      font-style: italic;
-      color: darkgrey;
+    .homebtn {
+      max-width: 250px;
+      width: 25%;
+      padding-bottom: 11%;
+    }
+    .homebtn-background {
+      max-width: 500px;
+      padding-bottom: 20%;
     }
   }
 
